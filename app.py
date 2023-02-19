@@ -1,1 +1,2 @@
-print("Hello World")
+# import module from class
+from flask import Flask
