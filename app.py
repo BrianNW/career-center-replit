@@ -1,12 +1,13 @@
-# import module from class
-from flask import Flask
+# import modules from class
+from flask import Flask, render_template
 
 # using app, an object of the class Flask
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_world():
-  return "<p> Hello! </p>"
+  return render_template('home.html')
 
 
 if __name__ == "__main__":
