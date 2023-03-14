@@ -65,10 +65,10 @@
     <h3>Open Positions</h3>
       <div> 
         {% for job in jobs %}
-          <div> {{job['title']}}
+          <div><strong> {{job['title']}} </strong></div>
+          <div> Location: {{job['location']}} </div>
         {% endfor %} 
       </div>
-    <p>TODO - Show open jobs here </p>
     <div class="text-center"><button class="btn btn-primary btn-lg">Contact Us</button>
     <p>Copyright 2023</p>
     </div>
