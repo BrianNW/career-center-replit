@@ -46,6 +46,10 @@
      .bodytext {
        color: grey;
      }
+     .job-title{
+       color: grey;
+       font-size: 1.1em;
+     }
      
    </style>
     
@@ -65,11 +69,12 @@
     <h3>Open Positions</h3>
       <div> 
         {% for job in jobs %}
-          <div><strong> {{job['title']}} </strong></div>
+          <div class="job-title" style="margin-bottom:4px"><strong> {{job['title']}} </strong></div>
           <div> Location: {{job['location']}} </div>
+         <div> Salary: {{job['salary']}} </div><hr>
         {% endfor %} 
       </div>
-    <div class="text-center"><button class="btn btn-primary btn-lg">Contact Us</button>
+    <div class="text-center";"><button class="btn btn-primary btn-lg">Contact Us</button>
     <p>Copyright 2023</p>
     </div>
 </div>
