@@ -23,6 +23,11 @@ JOBS = [
     'title': 'Data Analyst3',
     'location': 'Vancouver',
     'salary': '80000'
+  },
+    {
+    'id': 5,
+    'title': 'Data Analyst4',
+    'location': 'Vancouver'
   }
 ]
 

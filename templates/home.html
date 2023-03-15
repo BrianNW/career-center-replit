@@ -67,11 +67,15 @@
     <p class="bodytext">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
     <h3>Open Positions</h3>
-      <div> 
+      <div style="margin-top:25px;margin-bottom:25px;"> 
         {% for job in jobs %}
           <div class="job-title" style="margin-bottom:4px"><strong> {{job['title']}} </strong></div>
           <div> Location: {{job['location']}} </div>
+        
+        {% if 'salary' in job %}
          <div> Salary: {{job['salary']}} </div><hr>
+        {% endif %}
+        
         {% endfor %} 
       </div>
     <div class="text-center";"><button class="btn btn-primary btn-lg">Contact Us</button>
