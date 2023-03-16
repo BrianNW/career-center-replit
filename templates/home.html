@@ -69,13 +69,7 @@
     <h3>Open Positions</h3>
       <div style="margin-top:25px;margin-bottom:25px;"> 
         {% for job in jobs %}
-          <div class="job-title" style="margin-bottom:4px"><strong> {{job['title']}} </strong></div>
-          <div> Location: {{job['location']}} </div>
-        
-        {% if 'salary' in job %}
-         <div> Salary: {{job['salary']}} </div><hr>
-        {% endif %}
-        
+         
         {% endfor %} 
       </div>
     <div class="text-center";"><button class="btn btn-primary btn-lg">Contact Us</button>
