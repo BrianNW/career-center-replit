@@ -26,11 +26,13 @@ JOBS = [{
 }]
 
 
+# html route
 @app.route("/")
 def hello_world():
   return render_template('home.html', jobs=JOBS, company_name='Career Center')
 
 
+#json route
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
