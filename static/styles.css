@@ -1,0 +1,18 @@
+
+/* Navbar styles  */
+
+#nav-bottom-push {
+  height:100px;
+  
+} 
+  @media only screen and (max-width: 975px) {
+  #nav-bottom-push {
+    height:240px;
+  }
+}
+
+  @media only screen and (max-width: 380px) {
+  #nav-bottom-push {
+    height:260px;
+  }
+}
