@@ -2,12 +2,17 @@
 /* Navbar styles  */
 
 #nav-bottom-push {
-  height:100px;
+  height:50px;
   
 } 
+
+#intro-2col{
+  margin-bottom:45px;
+}
+
   @media only screen and (max-width: 975px) {
   #nav-bottom-push {
-    height:240px;
+    height:100px;
   }
 }
 
@@ -16,3 +21,4 @@
     height:260px;
   }
 }
+
